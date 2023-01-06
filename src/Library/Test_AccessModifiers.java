@@ -1,5 +1,5 @@
 package Library;
-import day47_Encapsulations.AccessModifiers;
+import day47_Encapsulation.AccessModifiers;
 public class Test_AccessModifiers {
 
     public static void main(String[] args) {

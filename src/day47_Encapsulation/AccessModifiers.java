@@ -1,4 +1,4 @@
-package day47_Encapsulations;
+package day47_Encapsulation;
 
 public class AccessModifiers {
 
@@ -20,6 +20,17 @@ public class AccessModifiers {
 
     private static void privatemethod(){
         System.out.println("private method");
+    }
+
+    public static void main(String[] args) {
+        System.out.println(publicVariable);
+        System.out.println(defaultvariable);
+        System.out.println(privatevariable);
+
+        publicmethod();
+        defaultmethod();
+        privatemethod();
+
     }
 
 }

@@ -1,4 +1,4 @@
-package day47_Encapsulations;
+package day47_Encapsulation;
 
 public class Test {
     public static void main(String[] args) {
@@ -11,6 +11,13 @@ public class Test {
 
         // System.out.println(AccessModifiers.privatevariable);
        //  AccessModifiers.privatemethod();
+
+        Encapsulation obj1 = new Encapsulation();
+       // System.out.println(obj1.ssn);
+
+        System.out.println(obj1.getSsn());
+
+
 
 
 

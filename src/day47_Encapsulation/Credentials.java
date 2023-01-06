@@ -22,7 +22,7 @@ public class Credentials {
     public void setusername(String username){
         this.username = username;
     }
-    public void setPassword(){
+    public void setPassword(String rashad123){
         this.password = password;
     }
 

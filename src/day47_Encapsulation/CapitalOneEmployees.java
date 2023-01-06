@@ -47,6 +47,11 @@ public class CapitalOneEmployees {
     }
 
 
+    public String toString(){
+        return "Name: "+employeename+" ,Age: "+age+" ,Jobtitle: "+jobtitle+",ID: "+getID()+",Salary: "+getSalary();
+    }
+
+
 
 
 

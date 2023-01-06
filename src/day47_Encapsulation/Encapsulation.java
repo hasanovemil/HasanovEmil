@@ -7,6 +7,9 @@ public class Encapsulation {
     public long getSsn(){
        return ssn;
     }
+    public void setSsn(long ssn){
+        this.ssn = ssn;
+    }
 
 
 }

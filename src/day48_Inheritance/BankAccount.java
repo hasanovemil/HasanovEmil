@@ -5,17 +5,16 @@ public class BankAccount {
     public String firstname;
     public String lastname;
 
-    public BankAccount(String firstname,String lastname){
+    public BankAccount(String firstname, String lastname) {
         this.firstname = firstname;
         this.lastname = lastname;
     }
+
     public static String Bankname;
 
-    static{
+    static {
         Bankname = "Bank of America";
     }
-
-
 
 
     private String accountHolder;
@@ -46,35 +45,35 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public void deposit(double amount){
-        System.out.println("Depositing: "+amount);
-        balance+=amount;
+    public void deposit(double amount) {
+        System.out.println("Depositing: " + amount);
+        balance += amount;
     }
-    public void withdraw(double amount){
-        if(amount<=0){
+
+    public void withdraw(double amount) {
+        if (amount <= 0) {
             System.out.println("Invalid balance");
             return;
         }
-        if(amount>balance || amount > 1000){
+        if (amount > balance || amount > 1000) {
             System.out.println("Not enough balance");
             return;
         }
-        System.out.println("Withdraw: "+amount);
-        balance-=amount;
+        System.out.println("Withdraw: " + amount);
+        balance -= amount;
     }
-    public void availablebalance(){
+
+    public void availablebalance() {
         System.out.println("Available balance: " + getBalance());
     }
 
-    public String toString(){
+    public String toString() {
         return Bankname +
-                "\n==========================================="+
-                "\n"+firstname+" "+lastname+
-                "\nAccountNumber: "+getAccountNumber()+
-                "\n============================================="+
-                "\nBalance: "+getBalance();
+                "\n===========================================" +
+                "\n" + firstname + " " + lastname +
+                "\nAccountNumber: " + getAccountNumber() +
+                "\n=============================================" +
+                "\nBalance: " + getBalance();
 
-
-
-
+    }
 }

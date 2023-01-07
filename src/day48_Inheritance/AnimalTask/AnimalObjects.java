@@ -4,8 +4,8 @@ public class AnimalObjects {
 
     public static void main(String[] args) {
 
-        Dog dog1 = new Dog("Winston","Medium",3,'M');
-        Dog dog2 = new Dog("Charlie","Large",4,'M');
+        Dog dog1 = new Dog("Winston","Medium",3,'M',"German");
+        Dog dog2 = new Dog("Charlie","Large",4,'M',"Bulldog");
         System.out.println(dog1.name);
         System.out.println(dog1.size);
 
@@ -18,5 +18,10 @@ public class AnimalObjects {
 
         System.out.println(dog1);
         System.out.println(dog2);
+
+        Cat cat1 = new Cat("Felix","Medium",4,'M',"British");
+
+
+        System.out.println(cat1);
     }
 }

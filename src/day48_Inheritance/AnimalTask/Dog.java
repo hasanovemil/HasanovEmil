@@ -3,8 +3,8 @@ package day48_Inheritance.AnimalTask;
 public class Dog extends Animal {
 
 
-    public Dog(String name,String size,int age,char gender,String breed){
-          setInfo(name,size,age,gender,breed);
+    public Dog(String name,String size,int age,char gender,String breed,double lb){
+          setInfo(name,size,age,gender,breed,lb);
     }
 
 

@@ -5,12 +5,16 @@ public class Person {
     public int age;
     public char gender;
 
+    private long ssn;
 
-    public void setInfo(String name,int age,char gender){
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
+    public long getSsn(){
+        return ssn;
     }
+    public void setSsn(){
+        this.ssn = ssn;
+    }
+
+
 
     private void eat(){
         System.out.println(name + " is eating ");
@@ -18,9 +22,17 @@ public class Person {
     private void walk(){
         System.out.println(name + " is walking ");
     }
-    private void sleep(){
+    public void sleep(){
         System.out.println(name + " is sleeping ");
     }
+
+    public void setPersonInfo(String name,int age,char gender){
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+
+
 
 
 

@@ -3,7 +3,7 @@ package day49_Inheritance.ScrumTeamTask;
 public class Tester extends Employee {
 
     public Tester(String name,int age,char gender,double salary,int ID,String jobtitle) {
-           setInfo(name, age, gender, salary, ID, jobtitle);
+        setInfo(name, age, gender, salary, ID, jobtitle);
 
     }
 
@@ -13,4 +13,6 @@ public class Tester extends Employee {
     public void creatingTicket(){
         System.out.println(name + " is creating Ticket on Jira");
     }
+
+
 }

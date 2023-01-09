@@ -1,8 +1,12 @@
 package day42_static;
 
-
 public class CapitalOne {
+
     public static void main(String[] args) {
+
+
+
+
 
         Tester [] testers = {new Tester(),new Tester(),new Tester()};
         testers[0].setInfo("A",'F',4524325,"Doctor",50000.0);
@@ -16,10 +20,11 @@ public class CapitalOne {
         developers[3].setInfo("Aida",'F',7777777,"doctor",8000);
         developers[4].setInfo("Xalid",'M',88888,"veterian",9000);
 
+        ScrumTeam team1 = new ScrumTeam();
 
-        Scrumteam team1 = new Scrumteam();
+
         team1.setInfo("Emil","Rashad","Gunel");
-        team1.addTester(testers);
+        team1.addTester(testers[0]);
         team1.addDeveloper(developers);
 
         System.out.println(team1);
@@ -33,6 +38,7 @@ public class CapitalOne {
         for( Developer each : team1.developers){
             System.out.println(each.name +" : $"+each.salary);
         }
+
         System.out.println("=============================================");
         team1.removeTester(4524325);
         team1.removeDeveloper(5666666);
@@ -43,7 +49,11 @@ public class CapitalOne {
         team1.addDeveloper(dev1);
         System.out.println(team1);
 
-        Scrumteam [] scrumteam = { team1,new Scrumteam(),new Scrumteam()};
+
+
+
+
+
 
 
 
@@ -54,4 +64,14 @@ public class CapitalOne {
 
 
     }
+
+
+
+
+
+
+
+
+
+
 }

@@ -3,7 +3,7 @@ package day42_static;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Scrumteam {
+public class ScrumTeam {
 
     ArrayList<Tester> testers = new ArrayList<>();
     ArrayList<Developer> developers = new ArrayList<>();
@@ -11,7 +11,7 @@ public class Scrumteam {
     String BA;
     String SM;
 
-    public void setInfo (String PO,String BA,String SM){
+    public void setInfo(String PO,String BA,String SM){
         this.PO = PO;
         this.BA = BA;
         this.SM = SM;
@@ -21,7 +21,7 @@ public class Scrumteam {
         testers.add(tester);
     }
 
-    public void addTester(Tester[] testers){
+    public void addTesters(Tester[] testers){
         if(testers.length==0){
             return;
         }
@@ -29,7 +29,7 @@ public class Scrumteam {
     }
 
     public void removeTester(long employeeID){
-        testers.removeIf(p->p.employeeID==employeeID);
+        this.testers.removeIf(p -> p.employeeID==employeeID);
     }
 
     public void addDeveloper(Developer developer){
@@ -54,5 +54,14 @@ public class Scrumteam {
 
 
 
-}
 
+
+
+
+
+
+
+
+
+
+}

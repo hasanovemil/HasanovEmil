@@ -1,9 +1,9 @@
 package day49_Inheritance.ScrumTeamTask;
 
-public class Developer extends Employee {
+public class Developer extends Employee{
 
     public Developer(String name,int age,char gender,double salary,int ID,String jobtitle) {
-           setInfo(name, age, gender, salary, ID, jobtitle);
+        setInfo(name, age, gender, salary, ID, jobtitle);
     }
 
     public void coding(){

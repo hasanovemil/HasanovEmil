@@ -1,6 +1,7 @@
 package day49_Inheritance.ScrumTeamTask;
 
 public class Person {
+
     public String name;
     public int age;
     public char gender;
@@ -31,13 +32,4 @@ public class Person {
         this.age = age;
         this.gender = gender;
     }
-
-
-
-
-
-
-
-
-
 }

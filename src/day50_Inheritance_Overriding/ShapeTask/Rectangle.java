@@ -10,6 +10,7 @@ public class Rectangle extends Shape {
         this.length = length;
         area = calculateArea();
         perimeter = calculatePerimeter();
+
     }
 
     public double calculateArea(){

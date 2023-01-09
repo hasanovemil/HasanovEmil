@@ -11,6 +11,15 @@ public class Circle {
         this.radius = radius;
         diameter = radius * 2;
     }
+    public double calcArea(){
+        return radius*radius*PI;
+    }
+
+    public double perimeter(){
+        return 2*PI*radius;
+    }
+
+
 
 
 

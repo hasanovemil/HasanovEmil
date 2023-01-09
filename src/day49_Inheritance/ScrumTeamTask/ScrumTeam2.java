@@ -3,17 +3,17 @@ package day49_Inheritance.ScrumTeamTask;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ScrumTeam {
+public class ScrumTeam2 {
 
     public ArrayList<Tester> testers = new ArrayList<>();
     public ArrayList<Developer> developers = new ArrayList<>();
 
-    public ScrumTeam(Tester[] testers,Developer[] developers){
-            addTesters(testers);
-            addDevelopers(developers);
+
+
+    public ScrumTeam2(Tester[] testers2,Developer[] developers2){
+        addTesters(testers2);
+        addDevelopers(developers2);
     }
-
-
 
 
     public void addTester(Tester tester){
@@ -41,8 +41,8 @@ public class ScrumTeam {
     }
 
     public void removeTesterDeveloper(int testerID,int developerID){
-         removeTester(testerID);
-         removeDeveloper(developerID);
+        removeTester(testerID);
+        removeDeveloper(developerID);
     }
 
     public String toString(){
@@ -60,6 +60,5 @@ public class ScrumTeam {
 
 
     }
-
 
 }

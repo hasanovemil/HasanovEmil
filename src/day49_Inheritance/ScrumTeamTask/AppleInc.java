@@ -35,6 +35,30 @@ public class AppleInc {
         ScrumTeam scrum2 = new ScrumTeam(testers2,developers2);
         System.out.println(scrum2);
 
+        scrum2.removeDeveloper(12);
+        scrum1.removeTester(135246);
+
+        ScrumTeam [] allscrumteam = {scrum1,scrum2};
+        System.out.println("=======================================");
+
+        System.out.println("Testers: ");
+
+        for(ScrumTeam eachScrum: allscrumteam){
+            for(Tester eachTester: eachScrum.testers ){
+                System.out.println(eachTester.name+" "+eachTester.salary);
+            }
+        }
+        System.out.println("========================================================");
+
+        System.out.println("Developers: ");
+
+        for(ScrumTeam eachScrum: allscrumteam){
+            for(Developer eachDeveloper: eachScrum.developers ){
+                System.out.println(eachDeveloper.name+" "+eachDeveloper.salary);
+            }
+        }
+
+
 
 
 

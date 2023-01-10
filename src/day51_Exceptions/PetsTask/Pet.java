@@ -16,6 +16,26 @@ public class Pet {
         this.color = color;
     }
 
+    protected void eat(){
+        System.out.println(name+" is eating chocolate");
+    }
+
+    protected void drink(){
+        System.out.println(name+" is drinking milk");
+    }
+
+    protected void sleep(){
+        System.out.println(name+" is sleeping on the floor");
+    }
 
 
+    public String toString() {
+        return "Pet{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", breed='" + breed + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }

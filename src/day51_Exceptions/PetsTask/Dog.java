@@ -5,6 +5,7 @@ public class Dog extends Pet   {
 
        public Dog(String name, int age, char gender, String breed, String color) {
               super(name, age, gender, breed, color);
+
        }
 
        @Override

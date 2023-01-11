@@ -1,5 +1,7 @@
 package day51_Exceptions;
 
+import Library.Util;
+
 public class ExceptionPractice {
 
     public static void main(String[] args) {
@@ -25,6 +27,10 @@ public class ExceptionPractice {
 
         }
         System.out.println("How are you");
+
+        Util.sleep(10);
+
+        System.out.println("Good bye");
     }
 
     public static void sleep(int seconds) {

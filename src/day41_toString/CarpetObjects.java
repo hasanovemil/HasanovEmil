@@ -6,7 +6,7 @@ public class CarpetObjects {
     public static void main(String[] args) {
        Carpet[] carpets = {new Carpet(),new Carpet(),new Carpet(),new Carpet(),new Carpet()};
 
-       carpets[0].customorder(4.5,3.5,7.5,false);
+        carpets[0].customorder(4.5,3.5,7.5,false);
        carpets[1].customorder(5.5,3.5,7.5,true);
        carpets[2].customorder(4.5,5.5,7.5,false);
        carpets[3].customorder(9.5,8.5,6.5,false);

@@ -21,6 +21,6 @@ public class Phone {
     }
 
     public String toString() {
-        return "Brand: "+brand+"\nModel: "+model+"\nPrice; "+price+"\nMadein: "+madeIn;
+        return "Brand: "+brand+"\nModel: "+model+"\nPrice: "+price+"\nMadein: "+madeIn;
     }
 }

@@ -13,14 +13,13 @@ public class Phone {
         this.model = model;
         this.price = price;
     }
-    public void call(long phonenumber){
+    protected void call(long phonenumber){
         System.out.println("Phone is calling: " + phonenumber);
     }
-    public void text(long phonenumber) {
+    protected void text(long phonenumber) {
         System.out.println("Phone is texting to: " + phonenumber);
     }
 
-    @Override
     public String toString() {
         return "Brand: "+brand+"\nModel: "+model+"\nPrice; "+price+"\nMadein: "+madeIn;
     }

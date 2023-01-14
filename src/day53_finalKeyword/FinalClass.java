@@ -12,3 +12,5 @@ public final class FinalClass extends C {
 }
 
  // class B extends FinalClass{ }
+
+

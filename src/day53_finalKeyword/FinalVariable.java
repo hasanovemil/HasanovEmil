@@ -7,6 +7,16 @@ public class FinalVariable {
     final static String eyecolor = "brown";
     final String bloodtype = "A";
 
+     final int x;
+     final static int y;
+
+     static{
+         y= 300;
+     }
+     public FinalVariable(){
+         x = 700;
+     }
+
     public static void main(String[] args) {
 
         final LocalDate dateofbirth = LocalDate.of(1985,07,13);
@@ -29,6 +39,10 @@ public class FinalVariable {
 
         final String birthplace = "Azerbaijan";
         //birthplace = "USA";
+
+       // final int a
+
+        // System.out.println(a);
 
 
 

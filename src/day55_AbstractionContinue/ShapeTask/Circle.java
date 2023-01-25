@@ -1,8 +1,15 @@
 package day55_AbstractionContinue.ShapeTask;
 
-public class Circle extends Shape {
+public final class Circle extends Shape {
 
     public double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+        area = calculateArea();
+        perimeter = calculatePerimeter();
+        volume = calculateVolume();
+    }
 
     @Override
     public double calculateArea(){
@@ -16,8 +23,20 @@ public class Circle extends Shape {
     public double calculateVolume(){
         return 0;
     }
+    static {
+        name = "Circle";
+        hasVolume = false;
+    }
 
-
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", area=" + area +
+                ", perimeter=" + perimeter +
+                ", volume=" + volume +
+                '}';
+    }
 
 
 }

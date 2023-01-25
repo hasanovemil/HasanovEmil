@@ -16,8 +16,20 @@ public final class Samsung extends Phone {
     }
 
     @Override
+    public void calling(long num1, long num2) {
+        calling(num1);
+        calling(num2);
+    }
+
+    @Override
     public void texting(long phonenumber) {
         System.out.println("Samsung is texting: "+phonenumber);
+    }
+
+    @Override
+    public void texting(long num1, long num2) {
+        texting(num1);
+        texting(num2);
     }
 
     public void freezing(){

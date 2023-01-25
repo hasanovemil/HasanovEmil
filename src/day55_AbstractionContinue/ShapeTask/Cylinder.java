@@ -5,6 +5,13 @@ public final class Cylinder extends Shape {
     public double radius;
     public double height;
 
+    public Cylinder(double radius, double height) {
+        this.radius = radius;
+        this.height = height;
+        area = calculateArea();
+        perimeter = calculatePerimeter();
+        volume = calculateVolume();
+    }
 
     @Override
     public double calculateArea() {
@@ -19,5 +26,22 @@ public final class Cylinder extends Shape {
     @Override
     public double calculateVolume() {
         return Math.PI*Math.pow(radius,2)*height;
+    }
+
+    static{
+        name = "Cylinder";
+        hasVolume = true;
+
+    }
+
+    @Override
+    public String toString() {
+        return "Cylinder{" +
+                "radius=" + radius +
+                ", height=" + height +
+                ", area=" + area +
+                ", perimeter=" + perimeter +
+                ", volume=" + volume +
+                '}';
     }
 }

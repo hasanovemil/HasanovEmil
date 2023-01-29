@@ -13,7 +13,7 @@ public class Cube extends Shape implements Volume  {
 
     @Override
     public double calculateperimeter() {
-        return side *4*6;
+        return side*12;
     }
 
     @Override

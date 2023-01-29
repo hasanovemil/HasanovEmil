@@ -1,14 +1,26 @@
 package Office_Hours.Practice_09_23_2020;
 
 public class Square extends Shape {
+
+    public double side;
+
+    public Square(double side) {
+        if(side <=0 ){
+            throw new RuntimeException("side of square cannot be negative or zero");
+        }
+        this.side = side;
+        area = calculatearea();
+        perimeter = calculateperimeter();
+    }
+
     @Override
     public double calculatearea(){
-         return 0;
+         return Math.pow(side,2);
     }
 
     @Override
     public double calculateperimeter() {
-        return 0;
+        return side*4;
     }
 
 

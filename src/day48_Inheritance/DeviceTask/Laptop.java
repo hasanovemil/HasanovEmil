@@ -1,6 +1,6 @@
 package day48_Inheritance.DeviceTask;
 
-public class Laptop extends Device {
+public class Laptop extends Device{
 
     public static boolean hasCPU;
     public static boolean hasMouse;
@@ -8,14 +8,12 @@ public class Laptop extends Device {
     public String OS;
 
     public Laptop(String brand, String model, double price, boolean hasbattery, boolean hasmemory, String screensize,String OS){
-         setInfo(brand, model, price, hasbattery, hasmemory, screensize);
-         this.OS = OS;
+        setInfo(brand, model, price, hasbattery, hasmemory, screensize);
+        this.OS = OS;
     }
 
     public void coding(String language){
         System.out.println("Coding: "+language+" in "+brand+" "+model);
     }
-
-
 
 }

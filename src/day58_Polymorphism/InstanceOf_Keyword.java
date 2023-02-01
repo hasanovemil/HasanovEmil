@@ -1,15 +1,15 @@
 package day58_Polymorphism;
 
-
+import day55_Abstraction.ShapeTask.Circle;
+import day55_Abstraction.ShapeTask.Cylinder;
+import day55_Abstraction.ShapeTask.Shape;
 import day58_Polymorphism.AnimalTask.Animal;
 import day58_Polymorphism.AnimalTask.Cat;
 import day58_Polymorphism.AnimalTask.Dog;
 
 public class InstanceOf_Keyword {
 
-
-
-    public static void main(String[] args,Object shape) {
+    public static void main(String[] args) {
 
         Animal animal1 = new Animal(10,'F');
         Animal animal2 = new Dog("Winston",4,'M');
@@ -31,8 +31,28 @@ public class InstanceOf_Keyword {
 
         System.out.println(r4);
 
+        Shape shape1 = new Circle(3);
+        identifyShape(shape1);
 
 
 
     }
+
+    public static void identifyShape(Shape shape){
+         if(shape instanceof Circle){
+             System.out.println("Shape is circle");
+         }else if(shape instanceof Cylinder){
+             System.out.println("Shape is cylinder");
+         }else{
+             System.out.println("Shape is rectangle");
+         }
+    }
+
+
+
+
+
+
+
+
 }

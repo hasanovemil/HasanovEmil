@@ -1,19 +1,19 @@
 package day57_Polymorphism.EmployeeTask;
 
-public class Tester extends Employee {
+public class Developer extends Employee {
 
-    public Tester(String name, int ID, String jobtitle, double salary, char gender) {
+    public Developer(String name, int ID, String jobtitle, double salary, char gender) {
         super(name, ID, jobtitle, salary, gender);
     }
 
     @Override
     public void work() {
-        System.out.println("Tester "+name+" is working: ");
+        System.out.println("Developer "+name+" is working ");
     }
 
     @Override
     public String toString() {
-        return "Tester{" +
+        return "Developer{" +
                 "name='" + name + '\'' +
                 ", ID=" + ID +
                 ", jobtitle='" + jobtitle + '\'' +

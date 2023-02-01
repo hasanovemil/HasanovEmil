@@ -4,6 +4,7 @@ package day58_Polymorphism.AnimalTask;
 
 public class Dog extends Animal {
 
+
     public String dogName;
 
     public Dog(String dogName,int age, char gender) {
@@ -12,12 +13,17 @@ public class Dog extends Animal {
 
     }
 
+    public void eat(){
+        System.out.println("Dog"+dogName+" is eating");
+    }
+    public void sleep(){
+        System.out.println("Dog"+dogName+" is sleeping");
+    }
+
     public void bark(){
         System.out.println("Dog" +dogName+" is barking");
     }
-    public void sleep(){
-        System.out.println("Dog is sleeping");
-    }
+
 
     @Override
     public String toString() {

@@ -10,11 +10,22 @@ public class Zoo {
          dog1.eat();
          dog1.bark();
 
+        System.out.println(dog1.dogName);
+        System.out.println(dog1.age);
+        System.out.println(dog1.gender);
+
+
+
         System.out.println("========================================================");
 
         Animal animal1 = new Dog("Grizzy",4,'M');
         animal1.sleep();
         animal1.eat();
+
+        System.out.println(animal1.age);
+        System.out.println(animal1.gender);
+
+        System.out.println(animal1);
 
 
 

@@ -28,7 +28,13 @@ public class Samsung extends Phone implements AndroidApp,Downloadable{
         System.out.println("Samsung is freezing");
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Samsung{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", size='" + size + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

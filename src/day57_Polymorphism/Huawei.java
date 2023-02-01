@@ -16,15 +16,25 @@ public class Huawei extends Phone implements AndroidApp,AppleApp,Downloadable{
 
     @Override
     public void texting(long phonenumber) {
-
+        System.out.println("Huawei is texting: "+phonenumber);
     }
 
     @Override
     public void calling(long phonenumber) {
-
+        System.out.println("Huawei is calling: "+phonenumber);
     }
 
     public void stealInfo(){
-        System.out.println("Huawei is stealing");
+        System.out.println("Huawei is stealing your info");
+    }
+
+    @Override
+    public String toString() {
+        return "Huawei{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", size='" + size + '\'' +
+                ", price=" + price +
+                '}';
     }
 }

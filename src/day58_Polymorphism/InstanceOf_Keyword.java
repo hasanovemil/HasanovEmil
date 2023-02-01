@@ -24,6 +24,9 @@ public class InstanceOf_Keyword {
 
         System.out.println(r3);
 
+        boolean r4 = animal2 instanceof Animal;
+
+        System.out.println(r4);
 
 
     }

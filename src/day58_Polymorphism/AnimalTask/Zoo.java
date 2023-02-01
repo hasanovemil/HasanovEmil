@@ -15,7 +15,6 @@ public class Zoo {
         Animal animal1 = new Dog("Grizzy",4,'M');
         animal1.sleep();
         animal1.eat();
-        
 
 
 

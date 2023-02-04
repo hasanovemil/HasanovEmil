@@ -2,6 +2,7 @@ package day58_Polymorphism;
 
 import day55_Abstraction.ShapeTask.Circle;
 import day55_Abstraction.ShapeTask.Cylinder;
+import day55_Abstraction.ShapeTask.Rectangle;
 import day55_Abstraction.ShapeTask.Shape;
 import day58_Polymorphism.AnimalTask.Animal;
 import day58_Polymorphism.AnimalTask.Cat;
@@ -39,11 +40,10 @@ public class InstanceOf_Keyword {
 
         System.out.println(equalShapes(c1,c2));
 
+        Rectangle r8 = new Rectangle(4,5);
+        Rectangle r9 = new Rectangle(6,10);
 
-
-
-
-
+        System.out.println(equalShapes(r8,r9));
 
     }
 
@@ -67,6 +67,17 @@ public class InstanceOf_Keyword {
                 result = true;
             }
          }
+
+         boolean bothRectangle = shape1 instanceof Rectangle && shape2 instanceof Rectangle;
+         if(bothRectangle){
+             Rectangle r1 = (Rectangle) shape1;
+             Rectangle r2 = (Rectangle) shape2;
+             if(r1.width == r2.width && r1.length == r2.length){
+                 result = true;
+             }
+         }
+
+
          return result;
     }
 

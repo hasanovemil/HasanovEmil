@@ -36,6 +36,8 @@ public class InstanceOf_Keyword {
 
 
 
+
+
     }
 
     public static void identifyShape(Shape shape){
@@ -46,6 +48,18 @@ public class InstanceOf_Keyword {
          }else{
              System.out.println("Shape is rectangle");
          }
+    }
+
+    public static boolean equalShapes(Shape shape1,Shape shape2){
+         boolean result = false;
+         boolean bothCircle = shape1 instanceof Circle && shape2 instanceof Circle;
+         if(bothCircle){
+
+         }
+
+
+
+         return result;
     }
 
 

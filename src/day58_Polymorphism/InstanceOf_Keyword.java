@@ -34,6 +34,13 @@ public class InstanceOf_Keyword {
         Shape shape1 = new Circle(3);
         identifyShape(shape1);
 
+        Circle c1 = new Circle(3);
+        Circle c2 = new Circle(5);
+
+        System.out.println(equalShapes(c1,c2));
+
+
+
 
 
 
@@ -54,11 +61,12 @@ public class InstanceOf_Keyword {
          boolean result = false;
          boolean bothCircle = shape1 instanceof Circle && shape2 instanceof Circle;
          if(bothCircle){
-
+            Circle c1 = (Circle) shape1;
+            Circle c2= (Circle) shape2;
+            if(c1.radius == c2.radius){
+                result = true;
+            }
          }
-
-
-
          return result;
     }
 

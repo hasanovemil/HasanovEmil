@@ -1,5 +1,7 @@
 package day60_Collection;
 
+import day54_Abstraction.CarTask.Car;
+
 import java.util.*;
 
 public class ListInterface {
@@ -115,6 +117,21 @@ public class ListInterface {
             System.out.println(((Stack)eachgroup).pop());
             System.out.println(eachgroup);
         }
+
+
+        List<Car> SUVs = new ArrayList<>();
+        List<Car> sedans = new ArrayList<>();
+        List<Car> truck = new ArrayList<>();
+        List<Car> convertible = new ArrayList<>();
+
+
+
+        List<List<Car>> cars = new ArrayList<>(Arrays.asList(SUVs,sedans,truck,convertible));
+
+
+        List<List<List>> l5 = new ArrayList<>();
+
+
 
 
 

@@ -94,27 +94,26 @@ public class ListInterface {
         System.out.println("Size of list2 = " + l2.get(1).size());
 
 
-        List<List<String>> groups = new ArrayList<>();
-        groups.addAll(Arrays.asList(new ArrayList<>(),
-                new ArrayList<>(),
-                new ArrayList<>(),
-                new ArrayList<>(),
-                new ArrayList<>(),
-                new ArrayList<>(),
-                new ArrayList<>()));
+        List<List<String>> groups = new Stack<>();
+        groups.addAll(Arrays.asList(new Stack<>(),
+                new Stack<>(),
+                new Stack<>(),
+                new Stack<>(),
+                new Stack<>(),
+                new Stack<>(),
+                new Stack<>()));
 
-        groups.get(0).addAll(Arrays.asList("A","B"));
-        groups.get(1).addAll(Arrays.asList("C","D"));
-        groups.get(2).addAll(Arrays.asList("E","F"));
-        groups.get(3).addAll(Arrays.asList("M","N"));
-        groups.get(4).addAll(Arrays.asList("O","P"));
-        groups.get(5).addAll(Arrays.asList("X","Y"));
-        groups.get(6).addAll(Arrays.asList("T","Z"));
+        groups.get(0).addAll(Arrays.asList("Emil","Rashad","Gunel","Aida"));
+        groups.get(1).addAll(Arrays.asList("Rustam","ALi","Elsen","Aqil"));
+        groups.get(2).addAll(Arrays.asList("Ramil","Isa","Aqsin","Murad"));
+        groups.get(3).addAll(Arrays.asList("Arif","Valid","Orxan","Vaqif"));
+        groups.get(4).addAll(Arrays.asList("Babek","Cingiz","Xalid","Ulker"));
+        groups.get(5).addAll(Arrays.asList("Vuqar","Tabriz","Nabi","Zakir"));
+        groups.get(6).addAll(Arrays.asList("Sakir","Mehman","Tural","Vasif"));
 
-        for(List<String> eachgroup: groups){
-            for(String eachstudent:eachgroup){
-                System.out.println(eachstudent +"  ");
-            }
+        for(List<String> eachgroup : groups){
+            System.out.println(((Stack)eachgroup).pop());
+            System.out.println(eachgroup);
         }
 
 

@@ -34,6 +34,7 @@ public class IterablePractice {
                 it.remove();
             }
         }
+        System.out.println(list3);
 
 
 

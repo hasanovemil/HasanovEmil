@@ -25,6 +25,22 @@ public class SetPractice {
         str10 = new LinkedHashSet<>(Arrays.asList(str10.split(""))).toString();
         str10 = str10.replace("[","").replace(",","").replace("]","");
         System.out.println(str10);
+        System.out.println("==========================================");
+
+        String[] names2 = {"Emil","Rashad","Gunel","Emil","Emil","Emil","Emil","Emil"};
+
+        names2 = new LinkedHashSet<>(Arrays.asList(names2)).toArray(new String[0]);
+
+        System.out.println(Arrays.asList(names2));
+
+        System.out.println("======================================");
+
+        Integer[] numbers = {1,1,1,1,2,2,2,2,0,0,0,0,3,3,3,3,4,4,4,4};
+
+        numbers = new LinkedHashSet<>(Arrays.asList(numbers)).toArray(new Integer[0]);
+
+        System.out.println(Arrays.asList(numbers));
+
 
 
 

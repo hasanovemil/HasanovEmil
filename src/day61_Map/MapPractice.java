@@ -15,6 +15,13 @@ public class MapPractice {
         System.out.println(employees);
         System.out.println(employees.size());
 
+        System.out.println("Salary of Rashad: "+employees.get("Rashad"));
+
+        employees.remove("Gunel");
+        System.out.println(employees);
+
+
+
 
 
 

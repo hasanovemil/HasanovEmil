@@ -1,4 +1,4 @@
-package day61_Map;
+package day61_Maps;
 
 import java.util.ArrayList;
 import java.util.Arrays;

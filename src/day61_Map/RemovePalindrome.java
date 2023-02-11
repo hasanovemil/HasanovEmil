@@ -2,16 +2,33 @@ package day61_Map;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class RemovePalindrome {
 
     public static void main(String[] args) {
 
-        String[] str = {"Emil","Rashad","level","Madam"};
+        String[] words = {"Emil","Rashad","Level","Madam"};
 
         List<String> list = new ArrayList<>();
-        list.addAll(Arrays.asList(str));
+        list.addAll(Arrays.asList(words));
+
+        System.out.println(list);
+
+        Iterator<String> it = list.iterator();
+
+        while (it.hasNext()){
+            String each = it.next();
+            String reverse = "";
+            for(int i = each.length()-1;i >=0 ;i--){
+                reverse+=each.charAt(i);
+            }
+            if(each.equalsIgnoreCase(reverse)){
+                it.remove();
+            }
+        }
+        System.out.println(list);
 
 
 

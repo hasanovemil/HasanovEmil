@@ -16,7 +16,10 @@ public class MapPractice3 {
         countries.put("Azrebaijan","Baku");
         countries.put("Turkey","Ankara");
 
-
+         for(String eachCountry : countries.keySet()){
+            String eachCity = countries.get(eachCountry);
+             System.out.println(eachCountry+"'s capital is: "+eachCity);
+         }
 
 
 

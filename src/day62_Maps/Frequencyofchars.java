@@ -3,6 +3,7 @@ package day62_Maps;
 import java.util.*;
 
 public class Frequencyofchars {
+
     public static void main(String[] args) {
 
         String str = "aaabbbccb";   //a2b4c2
@@ -17,6 +18,8 @@ public class Frequencyofchars {
              map.put(each,frequency);
         }
         System.out.println(map);
+
+
 
 
 

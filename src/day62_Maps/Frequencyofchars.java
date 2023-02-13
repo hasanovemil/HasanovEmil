@@ -1,9 +1,6 @@
 package day62_Maps;
 
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Frequencyofchars {
     public static void main(String[] args) {
@@ -15,12 +12,11 @@ public class Frequencyofchars {
         List<String> list = Arrays.asList(str.split(""));
         System.out.println(list);
 
-        for(String each : list){
-
-
-
+        for(String each : list){  // a, a, a, b, b, b, c, c, b
+             int frequency = Collections.frequency(list,each);
+             map.put(each,frequency);
         }
-
+        System.out.println(map);
 
 
 

@@ -5,7 +5,7 @@ import java.util.*;
 public class UniqueCharacters {
     public static void main(String[] args) {
 
-        String str = "abacbdeef";
+        String str = "abacbdeeffffffkkkoooooootyvvvvvvvvbbbbbbbxxxxxxzzzz";
 
         Map<String,Integer> map1 = new LinkedHashMap<>();
 
@@ -17,6 +17,7 @@ public class UniqueCharacters {
             }
         }
         System.out.println(map1);
+        System.out.println(map1.containsKey("y"));
 
 
 

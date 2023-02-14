@@ -36,6 +36,19 @@ public class Test {
 
         }
 
+        System.out.println("=========================================");
+
+        Day day = Day.Mon;
+        Day day2 = Day.Tue;
+        Day day3 = Day.Thu;
+
+        Month month1 = Month.Jan;
+
+        Level level1 = Level.Low;
+
+        Planet planet1 = Planet.Earth;
+
+
 
 
 

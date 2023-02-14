@@ -33,9 +33,17 @@ public class ListofMaps {
         System.out.println(list);
         System.out.println(list.size());
 
-        for(Map <String,String > each: list){
-            System.out.println(each);
+        for(Map <String,String > eachMap: list){
+            System.out.println(eachMap);
+            for(Map.Entry<String,String > each: eachMap.entrySet() ){
+                String names = each.getKey();
+                String jobTitle = each.getValue();
+                if(jobTitle.equals("scientist")){
+                    System.out.println(names);
+                }
+            }
         }
+
 
 
 
